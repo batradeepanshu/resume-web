@@ -1,0 +1,59 @@
+.home-wrap{
+  background-color: #EBE5E5;
+}
+.right-section{
+  position: relative;
+  height: 100%;
+}
+.left-section{
+  position: relative;
+  height: 100%;
+}
+.left-section img{
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.salutation{
+  font-size: 30px;
+  text-align: left;
+}
+.brief-about-me{
+  text-align: left;
+  width: 80%;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+.res-wor-ski .r-w-s{
+  border-radius: 50%;
+  width: 100px;
+  line-height: 100px;
+  float: left;
+  margin-right: 1rem;
+  height: 100px;
+  background-color: orange;
+  cursor: pointer;
+  color: white;
+}
+.res-wor-ski .r-w-s:hover{
+  background-color: #bd8d36;
+}
+.me-container2{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.me-container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.left-section .name{
+  font-size: 30px;
+}
+.left-section .job-role{
+  font-size: 20px;
+}
