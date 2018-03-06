@@ -13,7 +13,7 @@ class Home extends Component{
         <div className='me-container'>
         <div className='name'>John Doe</div>
         <div className='job-role'>Web Developer</div>
-        <img src='https://static.wixstatic.com/media/84770f_71b71726d1644b0baa8482970c919460.jpg/v1/fill/w_385,h_380,al_c,q_80,usm_0.66_1.00_0.01/84770f_71b71726d1644b0baa8482970c919460.webp'/>
+        <img src='https://i.kinja-img.com/gawker-media/image/upload/s--0Ay80VP0--/c_scale,fl_progressive,q_80,w_800/fbf2mwatctocg7s2uufc.png'/>
         </div>
       </div>
       <div className='right-section col-md-6'>

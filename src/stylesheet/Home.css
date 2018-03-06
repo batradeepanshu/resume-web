@@ -11,6 +11,9 @@
 }
 .left-section img{
     border-radius: 50%;
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
     margin-top: 30px;
 }
 .salutation{

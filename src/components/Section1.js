@@ -1,6 +1,7 @@
 import React,{Component} from "react";
 import Header from "./Header";
 import { BrowserRouter,Route,Switch } from 'react-router-dom';
+import AnimateHOC from './AnimateHOC';
 import Home from "./Home";
 import Skills from './Skills';
 import "../stylesheet/Section1.css";
@@ -21,7 +22,7 @@ class Section1 extends Component{
           <Header heightRef={(header)=>{this.header=header}}/>
           <Switch>
             <Route exact path='/' render={()=>{return <Home homeHeight={this.state.homeHeight || null}/>}}/>
-            <Route exact path='/skills' render={()=>{return <Skills/>}}/>
+            <Route exact path='/skills' render={()=>{return <Skills minHeight={this.state.homeHeight || null}/>}}/>
           </Switch>
           </div>
       </BrowserRouter>
