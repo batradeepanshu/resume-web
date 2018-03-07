@@ -6,7 +6,7 @@ import '../stylesheet/Header.css'
    return (
      <div className='header-wrapper clearfix' ref={props.heightRef}>
        <ul>
-         <Link to='/'>HOME</Link>
+         <Link to={process.env.PUBLIC_URL + '/'}>HOME</Link>
          <Link to='/skills'>SKILLS</Link>
          <Link to='/'>PROJECTS</Link>
          <Link to='/'>CONTACT</Link>

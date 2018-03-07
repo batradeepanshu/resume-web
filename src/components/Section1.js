@@ -21,7 +21,7 @@ class Section1 extends Component{
           <div>
           <Header heightRef={(header)=>{this.header=header}}/>
           <Switch>
-            <Route exact path='/' render={()=>{return <Home homeHeight={this.state.homeHeight || null}/>}}/>
+            <Route exact path={process.env.PUBLIC_URL + '/'} render={()=>{return <Home homeHeight={this.state.homeHeight || null}/>}}/>
             <Route exact path='/skills' render={()=>{return <Skills minHeight={this.state.homeHeight || null}/>}}/>
           </Switch>
           </div>
