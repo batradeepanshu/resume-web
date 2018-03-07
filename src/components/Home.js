@@ -14,6 +14,8 @@ class Home extends Component{
         <div className='name'>John Doe</div>
         <div className='job-role'>Web Developer</div>
         <img src='https://i.kinja-img.com/gawker-media/image/upload/s--0Ay80VP0--/c_scale,fl_progressive,q_80,w_800/fbf2mwatctocg7s2uufc.png'/>
+        {/* <img src='https://scontent.fblr2-1.fna.fbcdn.net/v/t1.0-9/15230797_1194780783902576_8799157982835144409_n.jpg?oh=2cb47e2eb5b6dd27e451cb5fe3feae2a&oe=5B456484'/> */}
+
         </div>
       </div>
       <div className='right-section col-md-6'>

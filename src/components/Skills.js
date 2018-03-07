@@ -1,7 +1,22 @@
 import React, { Component } from "react";
 import "../stylesheet/Skills.css";
+import axios from 'axios';
 
 class Skills extends Component {
+  componentWillMount(){
+    axios.get('https://api.myjson.com/bins/j4khl').then((resp)=>{
+
+      let buy=0,sell=0;
+      resp.data.forEach((trade)=>{
+        if(trade.Type=="Sell"){
+          sell=sell+Number(trade['Amount'].split('.')[0]);
+        }else{
+          buy=buy+Number(trade['Amount'].split('.')[0]);
+        }
+      });
+      debugger;
+    });
+  }
   googleThisTech(e){
     let techName;
     if(e.target.tagName && e.target.hasAttribute('src')){
@@ -14,6 +29,8 @@ class Skills extends Component {
     const { minHeight } = this.props;
     return (
       <div className='skills-wrapper' style={{ minHeight }}>
+
+
       <div className="skills-container" >
         <div className="skills-head">Skills</div>
         <div className="sub-section" onClick={this.googleThisTech.bind(this)}>
