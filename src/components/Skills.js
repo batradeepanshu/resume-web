@@ -38,7 +38,7 @@ class Skills extends Component {
           <div className="sub-head animate">TECHNOLOGIES</div>
           <div className="sub-content clearfix">
             <div className="tech-ico-name">
-              <img className='animate' src="/assets/html.png" />
+              <img className='animate' src={process.env.PUBLIC_URL+"/assets/html.png"} />
               <span>HTML 5</span>
             </div>
             <div className="tech-ico-name">
