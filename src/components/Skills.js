@@ -22,8 +22,9 @@ class Skills extends Component {
     if(e.target.tagName && e.target.hasAttribute('src')){
     let urlArray=e.target.src.split('/');
     techName=urlArray[urlArray.length-1].split(".")[0];
-    }
     window.open('http://google.com/search?q='+techName,'_blank');
+    }
+
   }
   render() {
     const { minHeight } = this.props;
