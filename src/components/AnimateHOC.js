@@ -11,7 +11,7 @@ const AnimateHOC = Page => {
         transitionLeaveTimeout={200}
         transitionName={props.match.path === '/thanks' ? 'SlideIn' : 'SlideOut'}
       >
-        <img src={logo} alt="" />
+        {/* <img src={logo} alt="" /> */}
         <Page {...props} />
       </ReactCSSTransitionGroup>
     </div>;

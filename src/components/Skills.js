@@ -28,83 +28,83 @@ class Skills extends Component {
   render() {
     const { minHeight } = this.props;
     return (
-      <div className='skills-wrapper' style={{ minHeight }}>
+      <div className='skills-wrapper transition-item' style={{ minHeight }}>
 
 
       <div className="skills-container" >
-        <div className="skills-head">Skills</div>
+        <div className="skills-head animate">Skills</div>
         <div className="sub-section" onClick={this.googleThisTech.bind(this)}>
-          <div className="sub-head">TECHNOLOGIES</div>
+          <div className="sub-head animate">TECHNOLOGIES</div>
           <div className="sub-content clearfix">
             <div className="tech-ico-name">
-              <img src="/assets/html.png" />
+              <img className='animate' src="/assets/html.png" />
               <span>HTML 5</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/css.png" />
+              <img className='animate' src="/assets/css.png" />
               <span>CSS 3</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/sass.png" />
+              <img className='animate' src="/assets/sass.png" />
               <span>SASS</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/js.png" />
+              <img className='animate' src="/assets/js.png" />
               <span>Javascript</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/es6.png" />
+              <img className='animate' src="/assets/es6.png" />
               <span>ECMAScript 6</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/node.png" />
+              <img className='animate' src="/assets/node.png" />
               <span>NodeJs</span>
             </div>
           </div>
         </div>
         <div className="sub-section" onClick={this.googleThisTech.bind(this)}>
-          <div className="sub-head">TOOLS</div>
+          <div className="sub-head animate">TOOLS</div>
           <div className="sub-content clearfix">
             <div className="tech-ico-name">
-              <img src="/assets/npm.png" />
+              <img className='animate' src="/assets/npm.png" />
               <span>npm</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/git.png" />
+              <img className='animate' src="/assets/git.png" />
               <span>Git</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/webpack.png" />
+              <img className='animate' src="/assets/webpack.png" />
               <span>Webpack</span>
             </div>
           </div>
         </div>
         <div className="sub-section" onClick={this.googleThisTech.bind(this)}>
-          <div className="sub-head">LIBRARIES & FRAMEWORKS</div>
+          <div className="sub-head animate">LIBRARIES & FRAMEWORKS</div>
           <div className="sub-content">
             <div className="tech-ico-name" >
-              <img src="/assets/react.png" />
+              <img className='animate' src="/assets/react.png" />
               <span>React 16</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/redux.png" />
+              <img className='animate' src="/assets/redux.png" />
               <span>Redux</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/angular.png" />
+              <img className='animate' src="/assets/angular.png" />
               <span>Angular 1</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/jquery.png" />
+              <img className='animate' src="/assets/jquery.png" />
               <span>JQuery</span>
             </div>
 
             <div className="tech-ico-name">
-              <img src="/assets/d3.png" />
+              <img className='animate' src="/assets/d3.png" />
               <span>D3js</span>
             </div>
             <div className="tech-ico-name">
-              <img src="/assets/bootstrap.png" />
+              <img className='animate' src="/assets/bootstrap.png" />
               <span>BOOTSTRAP 3</span>
             </div>
           </div>

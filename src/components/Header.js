@@ -8,6 +8,7 @@ import '../stylesheet/Header.css'
        <ul>
          <Link to={process.env.PUBLIC_URL + '/'}>HOME</Link>
          <Link to='/skills'>SKILLS</Link>
+         <Link to='/'>EXPERIENCE</Link>
          <Link to='/'>PROJECTS</Link>
          <Link to='/'>CONTACT</Link>
        </ul>
