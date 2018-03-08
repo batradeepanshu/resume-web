@@ -21,6 +21,7 @@ class Section1 extends Component{
           <Switch>
             {/* <Route exact path={'/'} component={AnimateHOC(Home)}/>
             <Route exact path={'/'} component={AnimateHOC(Skills)}/> */}
+            <Route exact path={'/resume-web'} render={()=>{return (<Home homeHeight={this.state.homeHeight || null}/>)}}/>
             <Route exact path={process.env.PUBLIC_URL+'/'} render={()=>{return (<Home homeHeight={this.state.homeHeight || null}/>)}}/>
             <Route exact path='/skills' render={()=>{return (
               <Skills minHeight={this.state.homeHeight || null}/>)}}/>
