@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../stylesheet/Header.css'
 
-const HOME_URL=process.env.PUBLIC_URL || '/';
+const HOME_URL=process.env.PUBLIC_URL?("/"+"resume-web"):'/';
  const Header=(props)=>{
    return (
      <div className='header-wrapper clearfix' ref={props.heightRef}>
