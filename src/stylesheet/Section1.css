@@ -1,8 +1,8 @@
 .animate{
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
       animation-name: example;
-      animation-duration: 1s;
+      animation-duration: 2s;
 }
 
 @-webkit-keyframes example {
