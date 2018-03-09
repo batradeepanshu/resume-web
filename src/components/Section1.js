@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import Header from "./Header";
-import { BrowserRouter,Route,Switch } from 'react-router-dom';
+import { HashRouter,Route,Switch } from 'react-router-dom';
 // import AnimateHOC from './AnimateHOC';
 import Home from "./Home";
 import Skills from './Skills';
@@ -16,7 +16,7 @@ class Section1 extends Component{
   render(){
     return (
       <div className='section1-wrap'>
-        <BrowserRouter>
+        <HashRouter>
           <div>
           <Header heightRef={(header)=>{this.header=header}}/>
           <Switch>
@@ -29,7 +29,7 @@ class Section1 extends Component{
             <Route exact path='/loader' component={Loader}/>
           </Switch>
           </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>);
   }
   componentDidMount(){
