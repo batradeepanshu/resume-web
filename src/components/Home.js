@@ -33,10 +33,10 @@ class Home extends Component{
           <div className='r-w-s animate'>
             Projects
           </div>
-          <div className='r-w-s animate' onClick={this.changeRoute.bind(this,"/skills")}>
+          <div className='r-w-s red animate' onClick={this.changeRoute.bind(this,"/skills")}>
             Skills
           </div>
-          <div className='r-w-s animate'>
+          <div className='r-w-s green animate'>
             My Resume
           </div>
         </div>

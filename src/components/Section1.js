@@ -4,6 +4,7 @@ import { BrowserRouter,Route,Switch } from 'react-router-dom';
 // import AnimateHOC from './AnimateHOC';
 import Home from "./Home";
 import Skills from './Skills';
+import Loader from './Loader';
 import "../stylesheet/Section1.css";
 class Section1 extends Component{
   constructor(){
@@ -25,6 +26,7 @@ class Section1 extends Component{
             <Route exact path={process.env.PUBLIC_URL+'/'} render={()=>{return (<Home homeHeight={this.state.homeHeight || null}/>)}}/>
             <Route exact path='/skills' render={()=>{return (
               <Skills minHeight={this.state.homeHeight || null}/>)}}/>
+            <Route exact path='/loader' component={Loader}/>
           </Switch>
           </div>
       </BrowserRouter>
