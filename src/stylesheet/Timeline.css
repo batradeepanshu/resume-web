@@ -1,0 +1,57 @@
+.timeline-wrap{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2rem;
+}
+.line-circle{
+  float: left;
+  position: relative;
+  width: 15%;
+}
+
+.timeline-content{
+  float: left;
+  /*margin-left: 5rem;*/
+  width: 85%;
+  padding: 1rem;
+  text-align: left;
+}
+.timeline-circle{
+  background-color: red;
+  border: 1px solid #9c9a9a;
+  width: 4.5rem;
+  height:  4.5rem;
+  border-radius: 50%;
+  position: relative;
+
+}
+.timeline-circle img{
+  object-fit: cover;
+  max-width: 4rem;
+  min-width: 2rem;
+  overflow: hidden;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.timeline-line{
+position: absolute;
+width: 1px;
+height: 100rem;
+background-color: black;
+left:2.25rem;
+}
+.timeline-element{
+  overflow: hidden;
+}
+.content-description{
+margin-bottom: 4rem;
+}
+.content-date{
+  font-size: 1.5rem;
+}
+.content-profile{
+  font-size: 2.5rem;
+}

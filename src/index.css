@@ -13,3 +13,9 @@ body {
 .hide{
   display: none;
 }
+.page-head{
+  text-align: left;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}

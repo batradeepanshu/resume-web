@@ -44,7 +44,7 @@ class Skills extends Component {
         {this.state.loading && <Loader/>}
         <div className={'skills-wrapper transition-item '+ (this.state.loading && 'hide')} style={{ minHeight }}>
         <div className="skills-container" >
-          <div className="skills-head animate">Skills</div>
+          <div className="page-head animate">Skills</div>
           <div className="sub-section" onClick={this.googleThisTech.bind(this)}>
             <div className="sub-head animate">TECHNOLOGIES</div>
             <div className="sub-content clearfix">

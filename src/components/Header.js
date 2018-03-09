@@ -8,7 +8,7 @@ import '../stylesheet/Header.css'
        <ul>
          <Link to={"/"}>HOME</Link>
          <Link to='/skills'>SKILLS</Link>
-         <Link to='/kills'>EXPERIENCE</Link>
+         <Link to='/experience'>EXPERIENCE</Link>
          <Link to='/'>PROJECTS</Link>
          <Link to='/'>CONTACT</Link>
        </ul>

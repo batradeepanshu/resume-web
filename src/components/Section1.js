@@ -5,6 +5,7 @@ import { HashRouter,Route,Switch } from 'react-router-dom';
 import Home from "./Home";
 import Skills from './Skills';
 import Loader from './Loader';
+import Timeline from './Timeline';
 import "../stylesheet/Section1.css";
 class Section1 extends Component{
   constructor(){
@@ -26,7 +27,7 @@ class Section1 extends Component{
             <Route exact path={'/'} render={()=>{return (<Home homeHeight={this.state.homeHeight || null}/>)}}/>
             <Route exact path='/skills' render={()=>{return (
               <Skills minHeight={this.state.homeHeight || null}/>)}}/>
-            <Route exact path='/loader' component={Loader}/>
+            <Route exact path='/experience' component={Timeline}/>
           </Switch>
           </div>
       </HashRouter>
