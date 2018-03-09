@@ -7,7 +7,7 @@ class Skills extends Component {
   constructor(){
     super();
     this.state={
-      loader:true
+      loading:true
     }
   }
 
