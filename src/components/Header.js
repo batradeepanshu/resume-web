@@ -6,7 +6,7 @@ import '../stylesheet/Header.css'
    return (
      <div className='header-wrapper clearfix' ref={props.heightRef}>
        <ul>
-         <Link to={"/"}>HOME12ka4</Link>
+         <Link to={"/"}>HOME</Link>
          <Link to='/skills'>SKILLS</Link>
          <Link to='/kills'>EXPERIENCE</Link>
          <Link to='/'>PROJECTS</Link>
