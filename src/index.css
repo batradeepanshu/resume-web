@@ -10,3 +10,6 @@ body {
   clear: both;
   display: table;
 }
+.hide{
+  display: none;
+}

@@ -9,6 +9,7 @@ class Skills extends Component {
     this.state={
       loading:true
     }
+    this.imagesLoaded=0;
   }
 
   googleThisTech(e){
@@ -29,9 +30,8 @@ class Skills extends Component {
   componentDidMount(){
     let imageElements=document.getElementsByTagName('img');
     this.totalImages=imageElements.length;
-    this.imagesLoaded=0;
     for (let i = 0; i < imageElements.length; i++) {
-        imageElements[i].addEventListener("load", this.onImageLoad);
+        imageElements[i].addEventListener("load", this.onImageLoad.bind(this));
       }
     // imageElements.forEach((image)=>{
     //   image.addEventListener('load',this.onImageLoad);
@@ -39,11 +39,10 @@ class Skills extends Component {
   }
   render() {
     const { minHeight } = this.props;
-    if(!this.state.loading){
-      return (
-        <div className='skills-wrapper transition-item' style={{ minHeight }}>
 
-
+      return (<React.Fragment>
+        {this.state.loading && <Loader/>}
+        <div className={'skills-wrapper transition-item '+ (this.state.loading && 'hide')} style={{ minHeight }}>
         <div className="skills-container" >
           <div className="skills-head animate">Skills</div>
           <div className="sub-section" onClick={this.googleThisTech.bind(this)}>
@@ -124,11 +123,9 @@ class Skills extends Component {
           </div>
         </div>
       </div>
+      </React.Fragment>
       );
-    }
-    else{
-      return <Loader/>
-    }
+
 
   }
 }
