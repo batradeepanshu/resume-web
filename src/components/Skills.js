@@ -37,7 +37,7 @@ class Skills extends Component {
     const { minHeight } = this.props;
 
       return (<React.Fragment>
-        {this.state.loading && <Loader/>}
+        {this.state.loading && <Loader height={this.props.minHeight}/>}
         <div className={'skills-wrapper transition-item '+ (this.state.loading && 'hide')} style={{ minHeight }}>
         <div className="skills-container" >
           <div className="page-head animate">Skills</div>

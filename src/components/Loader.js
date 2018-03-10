@@ -1,8 +1,8 @@
 import React from 'react';
 import '../stylesheet/Loader.css'
 
-const Loader=()=>{
-  return (<div className="vertical-centered-box">
+const Loader=({height})=>{
+  return (<div className="vertical-centered-box" style={{height}}>
     <div>
       LOADING .........
     </div>

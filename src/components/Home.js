@@ -30,7 +30,7 @@ class Home extends Component{
     const {homeHeight,setPage}=this.props;
     return (
       <React.Fragment>
-      {this.state.loading && <Loader/>}
+      {this.state.loading && <Loader height={this.props.homeHeight}/>}
       <div className={'home-wrap transition-item '+(this.state.loading?'hide':'')} style={{height:homeHeight}}>
         <div className='left-section col-md-6'>
           <div className='me-container'>

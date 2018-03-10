@@ -27,7 +27,7 @@ class Section1 extends Component{
             <Route exact path={'/'} render={()=>{return (<Home homeHeight={this.state.homeHeight || null}/>)}}/>
             <Route exact path='/skills' render={()=>{return (
               <Skills minHeight={this.state.homeHeight || null}/>)}}/>
-            <Route exact path='/experience' component={Timeline}/>
+            <Route homeHeight={this.state.homeHeight || null} exact path='/experience' component={Timeline}/>
           </Switch>
           </div>
       </HashRouter>

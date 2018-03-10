@@ -41,7 +41,7 @@ class Timeline extends Component {
   render() {
     return (
       <React.Fragment>
-        {this.state.loading && <Loader/>}
+        {this.state.loading && <Loader height={this.props.homeHeight}/>}
         <div className={"timeline-wrap "+ (this.state.loading?'hide':'')}>
           <div className='page-head'>Experience</div>
           <TimelineElement
