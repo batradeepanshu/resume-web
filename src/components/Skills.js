@@ -19,7 +19,6 @@ class Skills extends Component {
     techName=urlArray[urlArray.length-1].split(".")[0];
     window.open('http://google.com/search?q='+techName,'_blank');
     }
-
   }
   onImageLoad(){
       this.imagesLoaded++;
@@ -33,9 +32,6 @@ class Skills extends Component {
     for (let i = 0; i < imageElements.length; i++) {
         imageElements[i].addEventListener("load", this.onImageLoad.bind(this));
       }
-    // imageElements.forEach((image)=>{
-    //   image.addEventListener('load',this.onImageLoad);
-    // });
   }
   render() {
     const { minHeight } = this.props;

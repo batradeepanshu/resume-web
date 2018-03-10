@@ -11,6 +11,7 @@
 }
 .left-section img{
     border-radius: 50%;
+    filter: grayscale(100%) blur(3px);
     width: 35rem;
     height: 35rem;
     object-fit: cover;
