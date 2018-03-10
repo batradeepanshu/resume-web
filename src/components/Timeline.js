@@ -58,7 +58,8 @@ class Timeline extends Component {
               "HPE i.e Hewlett Packard was my First Company as a Full Time Employee,I worked with senior developers to manage large, complex design projects and involved in architecting the applications and development of common components."
             }
             color='white'
-            imgSrc='https://s3.amazonaws.com/freebiesupply/large/2x/hewlett-packard-logo-png-transparent.png'
+            imgSrc={process.env.PUBLIC_URL+"/assets/hplogo.jpg"}
+            // imgSrc='https://s3.amazonaws.com/freebiesupply/large/2x/hewlett-packard-logo-png-transparent.png'
           />
           <TimelineElement
             date={"July 2015-Nov 2015"}
@@ -68,7 +69,8 @@ class Timeline extends Component {
             }
             color='white'
             logo='rect'
-            imgSrc='https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/062012/sears-thumb.png?itok=LktqWr5E'
+            imgSrc={process.env.PUBLIC_URL+"/assets/searslogo.jpg"}
+            // imgSrc='https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/062012/sears-thumb.png?itok=LktqWr5E'
           />
         </div>
       </React.Fragment>
