@@ -3,9 +3,10 @@ import '../stylesheet/Loader.css'
 
 const Loader=({height})=>{
   return (<div className="vertical-centered-box" style={{height}}>
-    <div>
+    {/* <div>
       LOADING .........
-    </div>
+    </div> */}
+    <div class="lds-circle"></div>
 
 </div>)
 }

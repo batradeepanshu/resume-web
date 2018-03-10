@@ -28,6 +28,7 @@ class Section1 extends Component{
             <Route exact path='/skills' render={()=>{return (
               <Skills minHeight={this.state.homeHeight || null}/>)}}/>
             <Route homeHeight={this.state.homeHeight || null} exact path='/experience' component={Timeline}/>
+            <Route exact path='/loader' component={Loader}/>
           </Switch>
           </div>
       </HashRouter>
