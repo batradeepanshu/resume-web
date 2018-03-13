@@ -72,6 +72,16 @@ class Timeline extends Component {
             imgSrc={process.env.PUBLIC_URL+"/assets/searslogo.jpg"}
             // imgSrc='https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/062012/sears-thumb.png?itok=LktqWr5E'
           />
+          <TimelineElement
+            date={"2011-May 2015"}
+            company={"Btech-Computer Science"}
+            description={
+              "I graduated from college with a CGPA of 74%"
+            }
+            color='white'
+            imgSrc={process.env.PUBLIC_URL+"/assets/degree.png"}
+            // imgSrc='https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/062012/sears-thumb.png?itok=LktqWr5E'
+          />
         </div>
       </React.Fragment>
 

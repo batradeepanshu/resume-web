@@ -3,6 +3,7 @@
   left: 50%;
   transform: translateX(-50%);
   margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 .line-circle{
   float: left;

@@ -1,0 +1,81 @@
+.pro-head{
+  margin-left: 7rem;
+  margin-bottom: 4rem;
+}
+.pro-left{
+  /*background-color: grey;*/
+  text-align: left;
+  padding: 0 5rem;
+}
+.pro-left img{
+  width: 100%;
+  /*border-radius: 50%;*/
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.pro-left .project-image{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 3px 3px 10px grey;
+}
+.pro-left .overlay{
+  background-color: #ff7600;
+  opacity: .4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  visibility: hidden;
+  transition: left 1s;
+}
+.pro-left .project-image:hover .overlay{
+visibility: visible;
+left: 0;
+
+}
+.pro-left .project-name{
+  font-size: 2rem;
+  text-align: center;
+}
+.pro-left .project{
+
+}
+.pro-right{
+  text-align: left;
+  padding-right: 5rem;
+}
+.pro-right .web-link{
+  margin-bottom: 1rem;
+}
+.pro-right .screenshots .screen-head{
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.pro-right .screenshots .images img{
+  width: 15rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.pro-right .screenshots .images img:hover{
+  opacity: .4;
+  filter: grayscale(100%);
+}
+.pro-name{
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.active-project{
+  background-color: #ff7600;
+  opacity: .4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: left 1s;
+}

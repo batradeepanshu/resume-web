@@ -9,7 +9,7 @@ import '../stylesheet/Header.css'
          <Link to={"/"}>HOME</Link>
          <Link to='/skills'>SKILLS</Link>
          <Link to='/experience'>EXPERIENCE</Link>
-         <Link to='/'>PROJECTS</Link>
+         <Link to='/projects'>PROJECTS</Link>
          <Link to='/'>CONTACT</Link>
        </ul>
      </div>

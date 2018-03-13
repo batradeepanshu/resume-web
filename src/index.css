@@ -3,7 +3,8 @@ body {
   padding: 0;
   /*font-family: sans-serif;*/
   font-family: 'Cantarell', sans-serif;
-    background-color: #EBE5E5;
+  background-color: #ebe5e5;
+  /*background: linear-gradient(to right,#ebe5e5, #0e5a54);*/
 }
 
 .clearfix:after {
