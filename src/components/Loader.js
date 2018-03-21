@@ -6,7 +6,7 @@ const Loader=({height})=>{
     {/* <div>
       LOADING .........
     </div> */}
-    <div class="lds-circle"></div>
+    <div className="lds-circle"></div>
 
 </div>)
 }
