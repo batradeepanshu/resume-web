@@ -28,24 +28,31 @@
   font-weight: 200;
   margin-bottom: 15px;
 }
+.res-wor-ski{
+  margin-top: 4rem;
+}
 .res-wor-ski .r-w-s{
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   width: 100px;
   line-height: 100px;
   float: left;
-  margin-right: 1rem;
+  margin-right: 3rem;
   height: 100px;
-  background-color: orange;
+  background-color: #86BAA1;
+  background-color: #86BAA1;
+  transform: rotate(14deg);
   cursor: pointer;
   color: white;
+  transition: .1s transform linear;
 }
 .res-wor-ski .r-w-s:hover{
-  background-color: #bd8d36;
+  transform: scale(1.1) rotate(14deg);
+  /*background-color: #bd8d36;*/
 }
 .me-container2{
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 48%;
   transform: translate(0,-50%);
 }
 .me-container{

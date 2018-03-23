@@ -45,12 +45,18 @@ class Home extends Component{
           <div className='me-container2'>
           <div className='salutation'>Hello,</div>
           <div className='brief-about-me'>We come from the land of the ice and snow,
-          From the midnight sun where the hot spring flows</div>
+          From the midnight sun where the hot spring flows
+          The hammer of the gods<br/>
+          W'ell drive our ships to new lands<br/>
+          To fight the horde, and sing and cry<br/>
+          Valhalla, I am coming!
+
+        </div>
           <div className='res-wor-ski'>
             <div className='r-w-s animate'>
               Projects
             </div>
-            <div className='r-w-s red animate' onClick={this.changeRoute.bind(this,"/skills")}>
+            <div className='r-w-s animate' onClick={this.changeRoute.bind(this,"/skills")}>
               Skills
             </div>
             <div className='r-w-s green animate'>

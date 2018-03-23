@@ -7,6 +7,8 @@
   background-color: white;
   z-index: 1041;
   transform: translate(-50%,-50%);
+  border: 3px solid black;
+border-radius: 1rem;
 }
 .screens-modal img{
   width: 100%;
