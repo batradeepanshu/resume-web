@@ -16,11 +16,11 @@ class Projects extends Component {
         summary:
           "<p>Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum</p><p>Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum</p><p>Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum</p>",
         screenshots: [
-          "choosemission",
-          "embibe_home_page",
-          "learn",
-          "searchResults",
-          "searchResults2"
+          "searsHome",
+          "partSearch",
+          "partDetail",
+          "Cart",
+          "waterFilter"
         ]
       },
       {
@@ -104,6 +104,38 @@ class Projects extends Component {
       );
     });
   }
+  goToNextPreviousImage(flag){
+    let futureIndex;
+    let currentSrc=this.state.screenShotSrc;
+    currentSrc=currentSrc.split('/');
+    currentSrc=currentSrc[currentSrc.length-1].split('.')[0];
+    let currentPro=this.projects.filter((project)=>{
+      return project.screenshots.indexOf(currentSrc)!=-1
+    });
+    let {screenshots}=currentPro[0];
+    if(flag=='next'){
+      let currentIndex=screenshots.indexOf(currentSrc);
+      if(currentIndex==(screenshots.length-1)){
+      futureIndex=0;
+      }
+      else{
+        futureIndex=currentIndex+1
+      }
+    }else{
+      let currentIndex=screenshots.indexOf(currentSrc);
+      if(currentIndex==0){
+      futureIndex=screenshots.length-1;
+      }
+      else{
+        futureIndex=currentIndex-1
+      }
+    }
+    let imgSrc = process.env.PUBLIC_URL + "/assets/screenshots/" + screenshots[futureIndex] + ".png";
+    this.setState({
+      screenShotSrc:imgSrc
+    });
+
+  }
   render() {
     const { name, summary, webLink } = this.state.selectedProject;
     return (
@@ -113,7 +145,9 @@ class Projects extends Component {
 
         <div className={"projects-wrapper animate "+(this.state.loading?'hide':'')}>
           {this.state.screenShotSrc && (
-            <ScreenshotsModal>
+            <ScreenshotsModal onScreenShotClicked={this.onScreenShotClicked.bind(this)}
+              goToNextPreviousImage={this.goToNextPreviousImage.bind(this)}
+              >
               <img src={this.state.screenShotSrc} />
             </ScreenshotsModal>
           )}

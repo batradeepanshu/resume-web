@@ -16,3 +16,21 @@
 .modal-backdrop{
   opacity: .7;
 }
+
+.next-screenshot,.previous-screenshot{
+  position: absolute;
+  top:50%;
+  font-size: 2rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: maroon;
+  color: white;
+  padding: 1rem;
+  opacity: .5;
+}
+.previous-screenshot{
+  left: 0
+}
+.next-screenshot{
+  right: 0;
+}
