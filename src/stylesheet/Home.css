@@ -17,14 +17,17 @@
     object-fit: cover;
     margin-top: 30px;
 }
+.left-section img:hover{
+    filter: none;
+}
 .salutation{
-  font-size: 30px;
+  font-size: 3rem;
   text-align: left;
 }
 .brief-about-me{
   text-align: left;
   width: 80%;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 200;
   margin-bottom: 15px;
 }
@@ -45,6 +48,9 @@
   color: white;
   transition: .1s transform linear;
 }
+.res-wor-ski .r-w-s:nth-child(3){
+  margin-right: 0;
+}
 .res-wor-ski .r-w-s:hover{
   transform: scale(1.1) rotate(14deg);
   /*background-color: #bd8d36;*/
@@ -63,11 +69,85 @@
 }
 
 .left-section .name{
-  font-size: 30px;
+  font-size: 3rem;
 }
 .left-section .job-role{
-  font-size: 20px;
+  font-size: 2rem;
 }
 .red{
   background-color: grey !important;
+}
+
+@media only screen and (max-width:935px){
+  .brief-about-me{
+    font-size: 1.5rem;
+  }
+  .salutation{
+    font-size: 2.5rem;
+  }
+  .res-wor-ski .r-w-s{
+    width: 75px;
+    height: 75px;
+    font-size: 1.5rem;
+    line-height: 75px;
+  }
+  .left-section img{
+    width: 30rem;
+    height: 30rem;
+  }
+}
+@media only screen and (max-width:693px){
+  .left-section .name{
+    display: none;
+  }
+  .left-section .job-role{
+    display: none;
+  }
+  .left-section{
+    width: 100%;
+  }
+  .left-section img{
+    width: 250px;
+  height: 250px;
+  margin-top: 6rem;
+
+  }
+  .left-section{
+    width: 100%;
+  }
+  .right-section{
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .salutation{
+    text-align: center;
+  }
+  .brief-about-me{
+    width: 100%;
+    text-align: center;
+  }
+  .res-wor-ski .r-w-s{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .right-section{
+    margin-top: 6rem;
+    width: 100%;
+  }
+  .salutation{
+  font-size: 2.5rem;
+  }
+  .brief-about-me{
+    font-size: 2rem;
+  }
+  .res-wor-ski{
+    width: 240px;
+    margin: auto;
+    margin-top: 6rem;
+  }
 }

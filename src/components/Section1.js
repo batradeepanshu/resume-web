@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import Header from "./Header";
+import ResponsiveHeader,{Header} from "./Header";
 import { HashRouter,Route,Switch } from 'react-router-dom';
 // import AnimateHOC from './AnimateHOC';
 import Home from "./Home";
@@ -21,6 +21,7 @@ class Section1 extends Component{
         <HashRouter>
           <div>
           <Header heightRef={(header)=>{this.header=header}}/>
+          <ResponsiveHeader/>
           <Switch>
             {/* <Route exact path={'/'} component={AnimateHOC(Home)}/>
             <Route exact path={'/'} component={AnimateHOC(Skills)}/> */}

@@ -1,3 +1,6 @@
+html{
+  font-size: 62.5%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +9,9 @@ body {
   background-color: #ebe5e5;
   /*background-color: #BFD3C1;*/
   /*background: linear-gradient(to right,#ebe5e5, #0e5a54);*/
+}
+.resp{
+  display: none;
 }
 
 .clearfix:after {
@@ -18,7 +24,25 @@ body {
 }
 .page-head{
   text-align: left;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width:993px){
+  html{
+    font-size: 55.5%;
+  }
+}
+
+@media only screen and (max-width:480px){
+  html{
+    font-size: 45.5%;
+  }
+  .resp{
+    display: block;
+  }
+  .non-resp{
+    display: none;
+  }
 }

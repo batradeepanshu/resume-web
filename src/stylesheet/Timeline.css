@@ -1,7 +1,8 @@
 .timeline-wrap{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: static;
+  width: 46%;
+  margin: auto;
+  /*transform: translateX(-50%);*/
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
@@ -56,4 +57,36 @@ margin-bottom: 4rem;
 }
 .content-profile{
   font-size: 2.5rem;
+}
+
+@media only screen and (max-width:1200px){
+  .timeline-wrap{
+  width: 60%;
+  }
+}
+
+@media only screen and (max-width:993px){
+  .timeline-wrap{
+  width: 70%;
+  }
+  .line-circle{
+    width: 10%;
+  }
+  .timeline-content{
+    width: 90%;
+  }
+}
+@media only screen and (max-width:693px){
+  .timeline-wrap{
+  width: 90%;
+  }
+}
+
+@media only screen and (max-width:400px){
+  .line-circle{
+    width: 15%;
+  }
+  .timeline-content{
+    width: 85%;
+  }
 }

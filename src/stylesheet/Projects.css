@@ -60,6 +60,8 @@ left: 0;
   margin-right: 2rem;
   margin-bottom: 2rem;
   cursor: pointer;
+  border: 1px solid #9290a4;
+  padding: 3px;
 }
 .pro-right .screenshots .images img:hover{
   opacity: .4;

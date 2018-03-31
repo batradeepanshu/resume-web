@@ -21,3 +21,28 @@
 .header-wrapper a:hover{
   color: grey;
 }
+.responsive-header{
+  display: none;
+}
+
+@media only screen and (max-width:935px){
+  .header-wrapper{
+    display: none;
+  }
+}
+@media only screen and (max-width:480px){
+  .responsive-header{
+    display: block;
+    text-align: left;
+    padding-left: 2.5rem;
+    padding-top: 2.5rem;
+  }
+  .responsive-header .name-head{
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .responsive-header .role-head{
+    font-size: 2rem;
+
+  }
+}

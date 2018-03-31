@@ -7,10 +7,15 @@
   text-align: left;
   padding: 2rem;
   padding-left: 4rem;
-  position: absolute;
-  left: 50%;
+  width: 600px;
+  margin: auto;
+  /*position: absolute;*/
+  /*left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);*/
+  /*width:400px;
+  margin-left:-200px;
+  left:50%;*/
 
 }
 .sub-section{
@@ -20,7 +25,7 @@
 margin-bottom: 4rem;
 }
 .sub-section .sub-head{
-font-size: 20px;
+font-size: 2rem;
 margin-bottom: 2rem;
 
 }
@@ -36,4 +41,33 @@ margin-bottom: 2rem;
 }
 .tech-ico-name span{
   display: block;
+}
+@media only screen and (max-width:600px){
+  .skills-container{
+    width: 100%;
+    padding-left: 0;
+    padding: 0;
+  }
+  .sub-content img{
+    width: 4rem;
+
+  }
+  .sub-section{
+    font-size:1.3rem;
+
+  }
+  .sub-section .sub-head{
+    background-color: #0080001c;
+    padding: 0.3rem;
+    margin-bottom: 3.1rem;
+    text-align: center;
+  }
+  .tech-ico-name{
+    margin-bottom: 2rem;
+    width: 33.33%;
+    margin-right: 0;
+  }
+  .skills-container .page-head{
+    text-align: center;
+  }
 }
