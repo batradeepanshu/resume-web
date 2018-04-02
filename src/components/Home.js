@@ -38,18 +38,6 @@ class Home extends Component{
       {this.state.loading && <Loader height={this.props.homeHeight}/>}
       <div className={'home-wrap transition-item '+(this.state.loading?'hide':'')} style={{height:this.calculateHeight(homeHeight)}}>
         <div className='left-section col-md-6 col-xs-6 col-sm-6'>
-
-          <div className='res-wor-ski resp clearfix'>
-            <div className='r-w-s animate'>
-              Projects
-            </div>
-            <div className='r-w-s animate' onClick={this.changeRoute.bind(this,"/skills")}>
-              Skills
-            </div>
-            <div className='r-w-s green animate'>
-              My Resume
-            </div>
-          </div>
           <div className={(window.innerWidth>480?'me-container':'')}>
           <div className='name'>John Doe</div>
           <div className='job-role'>Web Developer</div>
