@@ -37,23 +37,27 @@ class Home extends Component{
       <React.Fragment>
       {this.state.loading && <Loader height={this.props.homeHeight}/>}
       <div className={'home-wrap transition-item '+(this.state.loading?'hide':'')} style={{height:this.calculateHeight(homeHeight)}}>
+        <div className='resp resp-r-w-s-wrap'>
+          {/* <div onClick={this.changeRoute.bind(this,"/projects")} className='resp-r-w-s'>Projects</div>
+          <div onClick={this.changeRoute.bind(this,"/skills")} className='resp-r-w-s'>Skills</div> */}
+          <div onClick={this.changeRoute.bind(this,"/projects")} className='resp-r-w-s'>Download Resume</div>
+        </div>
         <div className='left-section col-md-6 col-xs-6 col-sm-6'>
           <div className={(window.innerWidth>480?'me-container':'')}>
           <div className='name'>John Doe</div>
           <div className='job-role'>Web Developer</div>
           <img className='animate' src={process.env.PUBLIC_URL+"/assets/me3.jpeg"}/>
-          {/* <img src='https://scontent.fblr2-1.fna.fbcdn.net/v/t1.0-9/15230797_1194780783902576_8799157982835144409_n.jpg?oh=2cb47e2eb5b6dd27e451cb5fe3feae2a&oe=5B456484'/> */}
-
           </div>
+
         </div>
         <div className='right-section col-xs-6 col-md-6 col-sm-6'>
           <div className={(window.innerWidth>480?'me-container2':'')}>
           <div className='salutation'>Hello,</div>
           <div className='brief-about-me'>We come from the land of the ice and snow,
           From the midnight sun where the hot spring flows
-          The hammer of the gods<br/>
-          W'ell drive our ships to new lands<br/>
-          To fight the horde, and sing and cry<br/>
+          The hammer of the gods
+          W'ell drive our ships to new lands
+          To fight the horde, and sing and cry
           Valhalla, I am coming!
 
         </div>

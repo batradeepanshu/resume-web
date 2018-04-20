@@ -81,3 +81,30 @@ left: 0;
   left: 0;
   transition: left 1s;
 }
+
+@media only screen and (max-width:993px){
+  .pro-left{
+    width: 80%;
+    margin: auto;
+  }
+  .pro-right{
+    text-align: center;
+    margin: 4rem;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .pro-left{
+    width: 100%;
+    padding: 0 2%;
+  }
+  .pro-right{
+    text-align: center;
+    margin: 2rem 4rem;
+    padding: 0;
+  }
+  .project-detail .pro-summary{
+    font-size: 1.7rem;
+  }
+
+}

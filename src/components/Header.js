@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import { Link,withRouter } from 'react-router-dom';
-import '../stylesheet/Header.css'
+import '../stylesheet/Hamburger.css';
+import '../stylesheet/Header.css';
 
  export const Header=(props)=>{
    return (
@@ -16,15 +17,40 @@ import '../stylesheet/Header.css'
    )
  };
  class ResponsiveHeader extends Component{
+   constructor(){
+     super();
+     this.state={
+       hamburgerOpen:false
+     };
+   }
+   openHamMenu(){
+     this.setState({hamburgerOpen:!this.state.hamburgerOpen})
+   }
+
    render(){
      return (
-       <div className='responsive-header'>
+       <div className='resp responsive-header clearfix'>
         {this.props.history.location.pathname=='/' && (
-          <React.Fragment>
+          <div className='me-wrapper'>
           <div className='name-head'>John Doe</div>
           <div className='role-head'>Web Developer</div>
-        </React.Fragment>
+        </div>
         )}
+        <button className={"hamburger hamburger--collapse "+(this.state.hamburgerOpen?"is-active":"")} onClick={this.openHamMenu.bind(this)} type="button">
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
+            </span>
+        </button>
+        <div className={'responsive-header-menu'+(this.state.hamburgerOpen?'-show':'-hide')}>
+          <div className='close-nav' onClick={this.openHamMenu.bind(this)}>x</div>
+          <ul>
+            <Link to={"/"} onClick={this.openHamMenu.bind(this)}>HOME</Link>
+            <Link to='/skills' onClick={this.openHamMenu.bind(this)}>SKILLS</Link>
+            <Link to='/experience' onClick={this.openHamMenu.bind(this)}>EXPERIENCE</Link>
+            <Link to='/projects' onClick={this.openHamMenu.bind(this)}>PROJECTS</Link>
+            <Link to='/' onClick={this.openHamMenu.bind(this)}>CONTACT</Link>
+          </ul>
+        </div>
        </div>
      );
    }

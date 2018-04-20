@@ -5,6 +5,9 @@
   padding-right: 30px;
   font-size: 1.5rem;
 }
+.me-wrapper{
+  display: inline-block;
+}
 .header-wrapper ul{
   list-style-type: none;
   margin: 0;
@@ -21,18 +24,66 @@
 .header-wrapper a:hover{
   color: grey;
 }
-.responsive-header{
-  display: none;
+.hamburger{
+float: right;
+cursor: pointer;
 }
+.hamburger:focus{
+  outline: none;
+}
+
+.responsive-header-menu-show .close-nav{
+  color: white;
+position: absolute;
+right: 2rem;
+font-size: 7rem;
+top: 0;
+cursor: pointer;
+}
+.responsive-header-menu-show,.responsive-header-menu-hide{
+  width: 100%;
+  height: 10rem;
+  position: fixed;
+  background-color: black;
+  opacity: .8;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  padding-top: 10rem;
+  transition: .3s top;
+}
+.responsive-header-menu-hide{
+  top: -100%;
+}
+.responsive-header-menu-show{
+  top: 0;
+}
+.responsive-header-menu-show ul a,.responsive-header-menu-hide ul a{
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  padding: 3rem;
+  cursor: pointer;
+}
+.responsive-header-menu-show ul a:hover,.responsive-header-menu-hide ul a:hover{
+  text-decoration: none;
+}
+.responsive-header-menu-show ul a:active{
+  text-decoration: none;
+}
+
 
 @media only screen and (max-width:935px){
   .header-wrapper{
     display: none;
   }
-}
-@media only screen and (max-width:480px){
   .responsive-header{
     display: block;
+  }
+}
+@media only screen and (max-width:693px){
+  .responsive-header{
     text-align: left;
     padding-left: 2.5rem;
     padding-top: 2.5rem;

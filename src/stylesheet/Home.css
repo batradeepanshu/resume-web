@@ -77,7 +77,19 @@
 .red{
   background-color: grey !important;
 }
+.resp-r-w-s-wrap{
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+  font-size: 2rem;
 
+}
+.resp-r-w-s{
+  background-color: #dccfc7;
+  margin-bottom: 1rem;
+  padding: .5rem 0;
+  border-radius: 1rem;
+}
 @media only screen and (max-width:935px){
   .brief-about-me{
     font-size: 1.5rem;
@@ -97,6 +109,7 @@
   }
 }
 @media only screen and (max-width:693px){
+
   .left-section .name{
     display: none;
   }
@@ -114,36 +127,35 @@
   .left-section img{
     width: 350px;
   height: 350px;
-  margin-top: 6rem;
+  margin-top: 3rem;
 
   }
   .right-section{
     width: 100%;
     height: auto;
     margin-top: 4rem;
+    margin-bottom: 5rem;
   }
   .salutation{
     text-align: center;
     font-size: 2.5rem;
   }
   .brief-about-me{
-    width: 100%;
+    width: 80%;
+    margin: auto;
     text-align: center;
     font-size: 2rem;
   }
-  /*.res-wor-ski .r-w-s{
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  font-size: 1.2rem;
-  }*/
+  .res-wor-ski{
+    display: none;
+  }
 }
 
 @media only screen and (max-width:480px){
   .left-section img{
-    width: 350px;
-  height: 350px;
-  margin-top: 6rem;
+    width: 300px;
+  height: 300px;
+
   }
   .right-section{
     margin-top: 6rem;
@@ -154,6 +166,7 @@
   }
   .brief-about-me{
     font-size: 2rem;
+    width: 90%;
   }
   .res-wor-ski{
     width: 240px;
@@ -163,17 +176,11 @@
 }
 
 @media only screen and (max-width:400px){
-  .left-section img{
-    width: 300px;
-  height: 300px;
-  margin-top: 6rem;
-  }
 }
 
 @media only screen and (max-width:350px){
   .left-section img{
     width: 280px;
   height: 280px;
-  margin-top: 6rem;
   }
 }

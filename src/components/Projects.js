@@ -152,8 +152,8 @@ class Projects extends Component {
             </ScreenshotsModal>
           )}
           <div className="page-head pro-head">Projects</div>
-          <div className="pro-left col-md-6">{this.renderProjects()}</div>
-          <div className="pro-right col-md-6">
+          <div className="pro-left col-md-6 clearfix">{this.renderProjects()}</div>
+          <div className="pro-right col-md-6 clearfix">
             <div className="project-detail">
               <div className="pro-name">{name}</div>
               <div className="web-link">
