@@ -47,7 +47,7 @@ class Timeline extends Component {
           <TimelineElement
             date={"Feb 2017-Present"}
             company={"Embibe (Indiavidual Private Ltd)"}
-            description={"Looking for new opportunities I joined Embibe <a href='//www.embibe.com/landing' target='_blank'>(www.embibe.com)</a>  Embibe is a Ed-Tech Startup that uses AI(Artificial Intelligence) to provide personalised Education guides and Packs to students preparing for various competetive Exams.I was involved in rearchitecturing the application's front End using ReactJs/Redux.I worked in a Team of 3 Front End Developers and was involved in architecting and developing the application from scratch"}
+            description={"Looking for new opportunities I joined Embibe <a href='//www.embibe.com/landing' target='_blank'>(www.embibe.com)</a>.I was involved in rearchitecturing the Embibe's Web Application's Front-End using ReactJs/Redux. I worked in a Team of 3 Front End Developers and was involved in developing the application from scratch.This is the place where I got to learn the most."}
             color='white'
             imgSrc='https://d13l3vrk0vhr9w.cloudfront.net/images/common/embibelogo.svg'
           />
@@ -55,7 +55,7 @@ class Timeline extends Component {
             date={"Nov 2015-Feb 2017"}
             company={"Hewlett Packard Enterprise"}
             description={
-              "HPE i.e Hewlett Packard was my First Company as a Full Time Employee,I worked with senior developers to manage large, complex design projects and involved in architecting the applications and development of common components."
+              "HPE i.e Hewlett Packard was my First Company as a Full Time/Permanent Employee.I worked on a Project as an AngularJS(ver 1) Developer.It was a great learning experience. I learned to develop large and scalable Websites"
             }
             color='white'
             imgSrc={process.env.PUBLIC_URL+"/assets/hplogo.jpg"}
@@ -65,7 +65,7 @@ class Timeline extends Component {
             date={"July 2015-Nov 2015"}
             company={"SEARS IT"}
             description={
-              "I joined SEARS IT Pune as an Intern.The four months I worked there were Big Learning Experience."
+              "I joined SEARS IT Pune as an Intern. I spent 4 months fixing the application's bugs and doing UI enhancements. It really got me interested in the UI development"
             }
             color='white'
             logo='rect'
@@ -76,7 +76,7 @@ class Timeline extends Component {
             date={"2011-May 2015"}
             company={"Btech-Computer Science"}
             description={
-              "I graduated from college with a CGPA of 74%"
+              "I graduated from college with an aggregate of 74%."
             }
             color='white'
             imgSrc={process.env.PUBLIC_URL+"/assets/degree.png"}

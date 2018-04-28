@@ -52,6 +52,8 @@ left: 0;
 }
 .pro-right .screenshots .screen-head{
   font-size: 2rem;
+  font-style: italic;
+  text-decoration: underline;
   cursor: pointer;
   margin-bottom: 1rem;
 }
@@ -97,6 +99,10 @@ left: 0;
   .pro-left{
     width: 100%;
     padding: 0 2%;
+
+  }
+  .pro-name{
+    margin-bottom: 0;
   }
   .pro-right{
     text-align: center;

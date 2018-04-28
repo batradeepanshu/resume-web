@@ -3,6 +3,13 @@ import { withRouter } from 'react-router-dom';
 import Loader from './Loader';
 import "../stylesheet/Home.css";
 
+
+const PROD_DEV_STRINGS_MAP={
+  aboutMe:{
+    production:'We come from the land of the ice and snow, From the midnight sun where the hot spring flows The hammer of the gods Well drive our ships to new lands To fight the horde, and sing and cry Valhalla, I am coming!',
+    development: 'I am a UI Developer based in Noida,India with 3 years of extensive experince in developing large and small Web applications ,with large MNCs and even startups.\r\n            <p> I work with the latest UI technologies to make responsive Web applications\/PWAs which are :-<\/p>\r\n            <ul>\r\n            <li>high in performance<\/li>\r\n            <li>are scalable and maintainable<\/li>\r\n          <\/ul>'
+  }
+}
 class Home extends Component{
   constructor(){
     super();
@@ -55,24 +62,18 @@ class Home extends Component{
         <div className='right-section col-xs-6 col-md-6 col-sm-6'>
           <div className={(window.innerWidth>480?'me-container2':'')}>
           <div className='salutation'>Hello,</div>
-          <div className='brief-about-me'>We come from the land of the ice and snow,
-          From the midnight sun where the hot spring flows
-          The hammer of the gods
-          W'ell drive our ships to new lands
-          To fight the horde, and sing and cry
-          Valhalla, I am coming!
-
+          <div className='brief-about-me' dangerouslySetInnerHTML={{__html:PROD_DEV_STRINGS_MAP.aboutMe[process.env.NODE_ENV]}}>
         </div>
           <div className='res-wor-ski non-resp clearfix'>
-            <div className='r-w-s animate'>
+            <div className='r-w-s animate' onClick={this.changeRoute.bind(this,"/projects")}>
               Projects
             </div>
             <div className='r-w-s animate' onClick={this.changeRoute.bind(this,"/skills")}>
               Skills
             </div>
-            <div className='r-w-s green animate'>
-              My Resume
-            </div>
+            <a href={process.env.PUBLIC_URL+"/assets/Resume 16 April.docx"} className='r-w-s green animate'>
+               Resume
+             </a>
           </div>
           </div>
         </div>

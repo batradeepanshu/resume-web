@@ -1,6 +1,10 @@
 .home-wrap{
   /*background-color: #EBE5E5;*/
 }
+.brief-about-me ul{
+  list-style-type: circle;
+  list-style-position: inside;
+}
 .right-section{
   position: relative;
   height: 100%;
@@ -115,9 +119,11 @@ a:hover{
 @media only screen and (max-width:935px){
   .brief-about-me{
     font-size: 1.5rem;
+
   }
   .salutation{
     font-size: 2.5rem;
+
   }
   .res-wor-ski .r-w-s{
     width: 75px;
@@ -159,13 +165,14 @@ a:hover{
     margin-bottom: 5rem;
   }
   .salutation{
-    text-align: center;
+    text-align: left;
     font-size: 2.5rem;
+    padding-left: 2rem;
   }
   .brief-about-me{
     width: 80%;
     margin: auto;
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
   }
   .res-wor-ski{
