@@ -7,6 +7,11 @@
 }
 .me-wrapper{
   display: inline-block;
+  margin-bottom: 4rem;
+}
+.me-wrapper .page-head-resp{
+  font-size: 5rem;
+  text-transform: capitalize;
 }
 .header-wrapper ul{
   list-style-type: none;
@@ -50,27 +55,30 @@ cursor: pointer;
   height: 100%;
   z-index: 1;
   padding-top: 10rem;
-  transition: .3s top;
+  transition: .6s top;
 }
 .responsive-header-menu-hide{
-  top: -100%;
+  top: -200%;
 }
 .responsive-header-menu-show{
   top: 0;
 }
 .responsive-header-menu-show ul a,.responsive-header-menu-hide ul a{
-  display: block;
-  text-align: center;
-  color: white;
-  font-size: 2.5rem;
-  padding: 3rem;
-  cursor: pointer;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    border-bottom: 1px solid white;
+    padding: 4rem 3rem;
+    cursor: pointer;
 }
 .responsive-header-menu-show ul a:hover,.responsive-header-menu-hide ul a:hover{
   text-decoration: none;
 }
 .responsive-header-menu-show ul a:active{
   text-decoration: none;
+  background-color: white;
+  color: black;
 }
 
 
@@ -89,7 +97,7 @@ cursor: pointer;
     padding-top: 2.5rem;
   }
   .responsive-header .name-head{
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
   }
   .responsive-header .role-head{

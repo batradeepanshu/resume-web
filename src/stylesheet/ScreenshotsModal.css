@@ -36,3 +36,38 @@ border-radius: 1rem;
 .next-screenshot{
   right: 0;
 }
+.resp-prev-next{
+  display: none;
+}
+
+@media only screen and (max-width:480px){
+  .next-screenshot,.previous-screenshot{
+    display: none;
+  }
+  .screens-modal{
+    padding: 0;
+    width: 95%;
+  }
+
+  .resp-prev-next{
+    display: inline-block;
+    position: absolute;
+bottom: 20%;
+left: 0;
+
+display: inline-block;
+z-index: 100000000;
+right: 0;
+margin: auto;
+width: 50%;
+font-size: 2rem;
+  }
+  .resp-prev-next span{
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .previous-screenshot-resp{
+    margin-right: 2rem;
+  }
+}

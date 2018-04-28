@@ -14,7 +14,7 @@ class Projects extends Component {
         imageSrc: process.env.PUBLIC_URL + "/assets/searsproject.jpg",
         webLink: "www.searspartsdirect.com",
         summary:
-          "<p>Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum</p><p>Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum</p><p>Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum,Lorel Ipsum</p>",
+          "<p>  Sears, Roebuck and Company Sears logo 2010-present.svg Type Subsidiary Industry	RetailFounded	1886; 132 years ago (legacy) 1892; 126 years ago (first incorporation) 1906; 112 years ago (second incorporation) Chicago, Illinois Founders Richard Warren Sears Alvah Curtis Roebuck Headquarters	Hoffman Estates, Illinois, United States Number of locations 570 (Q4 2017)[1] Area served United States Canada (1952-2018) Mexico</p>",
         screenshots: [
           "searsHome",
           "partSearch",
@@ -24,7 +24,7 @@ class Projects extends Component {
         ]
       },
       {
-        name: "Quote 2 Order",
+        name: "Quote 2 Order FFFF",
         imageSrc: process.env.PUBLIC_URL + "/assets/q2o.jpg",
         webLink: "www.searspartsdirect.com",
         summary: "Q2o summary",
@@ -56,6 +56,7 @@ class Projects extends Component {
     };
   }
   onScreenShotClicked(source) {
+    window.scrollTo(0,0);
     this.setState({
       screenShotSrc: source
     });

@@ -15,6 +15,13 @@ export default class ScreenshotsModal extends Component{
         <span className='next-screenshot'
           onClick={()=>{this.props.goToNextPreviousImage('next')}}>Next</span>
       </div>
+      <div className='resp-prev-next'>
+        <span className='previous-screenshot-resp'
+          onClick={()=>{this.props.goToNextPreviousImage('previous')}}>Previous</span>
+        <span className='next-screenshot-resp'
+          onClick={()=>{this.props.goToNextPreviousImage('next')}}>Next</span>  
+      </div>
+
       </React.Fragment>
     );
   }

@@ -4,8 +4,12 @@
 .vertical-centered-box div{
   position: absolute;
   font-size: 2rem;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
   transform: translate(-50%,-50%);
 }
 
@@ -13,7 +17,7 @@
   display: inline-block;
   width: 51px;
   height: 51px;
-  margin: 6px;
+  /*margin: 6px;*/
   border-radius: 50%;
   background: #86BAA1;
   animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;

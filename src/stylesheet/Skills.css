@@ -49,12 +49,12 @@ margin-bottom: 2rem;
     padding: 0;
   }
   .sub-content img{
-    width: 4rem;
-
+    max-width: 5rem;
+    width: 5rem;
   }
   .sub-section{
     font-size:1.3rem;
-
+    margin-bottom: 0;
   }
   .sub-section .sub-head{
     background-color: #0080001c;
@@ -63,7 +63,7 @@ margin-bottom: 2rem;
     text-align: center;
   }
   .tech-ico-name{
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     width: 33.33%;
     margin-right: 0;
   }

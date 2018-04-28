@@ -26,16 +26,23 @@ import '../stylesheet/Header.css';
    openHamMenu(){
      this.setState({hamburgerOpen:!this.state.hamburgerOpen})
    }
+   renderPageName(){
 
+     return <div className='me-wrapper'>
+     <div className='page-head-resp'>{this.props.history.location.pathname.split('/')[1]}</div>
+   </div>
+
+   }
    render(){
      return (
-       <div className='resp responsive-header clearfix'>
-        {this.props.history.location.pathname=='/' && (
+       <div className='resp responsive-header clearfix' ref={this.props.respHeaderRef}>
+        {this.props.history.location.pathname=='/' ? (
           <div className='me-wrapper'>
-          <div className='name-head'>John Doe</div>
+          <div className='name-head'>{(process.env.NODE_ENV=='development')?'John Doe':'Deepanshu Batra'}</div>
           <div className='role-head'>Web Developer</div>
         </div>
-        )}
+      ):this.renderPageName()}
+
         <button className={"hamburger hamburger--collapse "+(this.state.hamburgerOpen?"is-active":"")} onClick={this.openHamMenu.bind(this)} type="button">
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>

@@ -28,7 +28,7 @@ class Home extends Component{
   calculateHeight(homeHeight){
     let height =(window.innerWidth>480?
       (window.innerWidth>935?homeHeight:(homeHeight*.9)):'auto');
-      return height;
+      return height-10;
   }
 
   render(){
@@ -40,13 +40,15 @@ class Home extends Component{
         <div className='resp resp-r-w-s-wrap'>
           {/* <div onClick={this.changeRoute.bind(this,"/projects")} className='resp-r-w-s'>Projects</div>
           <div onClick={this.changeRoute.bind(this,"/skills")} className='resp-r-w-s'>Skills</div> */}
-          <div onClick={this.changeRoute.bind(this,"/projects")} className='resp-r-w-s'>Download Resume</div>
+          <a href={process.env.PUBLIC_URL+"/assets/Resume 16 April.docx"} className='resp-r-w-s'>Download Resume
+          <img className={process.env.NODE_ENV=='development'?'dev animate':'animate'} src={process.env.PUBLIC_URL+"/assets/download.png"}/>
+        </a>
         </div>
         <div className='left-section col-md-6 col-xs-6 col-sm-6'>
           <div className={(window.innerWidth>480?'me-container':'')}>
-          <div className='name'>John Doe</div>
+          <div className='name'>{process.env.NODE_ENV=='development'?'John Doe':'Deepanshu Batra'}</div>
           <div className='job-role'>Web Developer</div>
-          <img className='animate' src={process.env.PUBLIC_URL+"/assets/me3.jpeg"}/>
+          <img className={process.env.NODE_ENV=='development'?'dev animate':'animate'} src={process.env.PUBLIC_URL+"/assets/me3.jpeg"}/>
           </div>
 
         </div>
@@ -75,6 +77,7 @@ class Home extends Component{
           </div>
         </div>
       </div>
+      {/* <div className='separation-stripe'></div> */}
       </React.Fragment>
     );
   }

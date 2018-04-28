@@ -21,7 +21,7 @@ class Section1 extends Component{
         <HashRouter>
           <div>
           <Header heightRef={(header)=>{this.header=header}}/>
-          <ResponsiveHeader/>
+          <ResponsiveHeader respHeaderRef={(respHeaderRef)=>{this.respHeaderRef=respHeaderRef}}/>
           <Switch>
             {/* <Route exact path={'/'} component={AnimateHOC(Home)}/>
             <Route exact path={'/'} component={AnimateHOC(Skills)}/> */}
@@ -38,7 +38,13 @@ class Section1 extends Component{
     </div>);
   }
   componentDidMount(){
-    let homeHeight=window.innerHeight-this.header.offsetHeight;
+    let homeHeight;
+    ;
+    if(window.innerWidth<=480){
+    homeHeight=window.innerHeight-this.respHeaderRef.offsetHeight;
+    }else{
+      homeHeight=window.innerHeight-this.header.offsetHeight;
+    }
     this.setState({homeHeight});
   }
 };

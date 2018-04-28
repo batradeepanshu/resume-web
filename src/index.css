@@ -27,7 +27,7 @@ body {
   font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 2rem;
-  display: none !important
+
 }
 
 @media only screen and (max-width:993px){
@@ -45,6 +45,9 @@ body {
 @media only screen and (max-width:693px){
   .resp{
     display: block;
+  }
+  .page-head{
+  display: none !important;
   }
   .non-resp{
     display: none;
