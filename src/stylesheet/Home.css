@@ -167,7 +167,8 @@ a:hover{
   .salutation{
     text-align: left;
     font-size: 2.5rem;
-    padding-left: 2rem;
+    width: 90%;
+    margin: auto;
   }
   .brief-about-me{
     width: 80%;
