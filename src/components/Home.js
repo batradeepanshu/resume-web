@@ -7,7 +7,7 @@ import "../stylesheet/Home.css";
 const PROD_DEV_STRINGS_MAP={
   aboutMe:{
     development:'We come from the land of the ice and snow, From the midnight sun where the hot spring flows The hammer of the gods Well drive our ships to new lands To fight the horde, and sing and cry Valhalla, I am coming!',
-    production: 'I am a UI Developer based in Bangalore,India with 3 years of extensive experince in developing large and small Web applications ,with large MNCs and even startups.\r\n            <p> I work with the latest UI technologies to make responsive Web applications\/PWAs which are :-<\/p>\r\n            <ul>\r\n            <li>high in performance<\/li>\r\n            <li>are scalable and maintainable<\/li>\r\n          <\/ul>'
+    production: 'I am a UI Developer based in Noida,India with 4 years of extensive experince in developing large and small Web applications ,with large MNCs and even startups.\r\n            <p> I work with the latest UI technologies to make responsive Web applications\/PWAs which are :-<\/p>\r\n            <ul>\r\n            <li>high in performance<\/li>\r\n            <li>are scalable and maintainable<\/li>\r\n          <\/ul>'
   }
 }
 class Home extends Component{
