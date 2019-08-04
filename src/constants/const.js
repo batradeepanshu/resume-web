@@ -4,7 +4,7 @@ export const FREELANCE = [
     imageSrc: process.env.PUBLIC_URL + "/assets/chkfakelogo.jpg",
     webLink: "analyticsdev.chkfake.com/",
     summary:
-      "<p>Sears, is an American chain of department stores. It also operates online through various websites one of which is searspartsdirect.com.</p><p> The website deals with all kinds of hardware parts and user can order them through the website.The webite's UI is made using Angular 1</p>",
+      "Chkfake is an online platform that allows anyone to check for authenticity of any major currency across globe. Available as an app on iOS and Android, it can be downloaded free of charge. The fastest growing industry worldwide is counterfeiting.Jan 17, 2018<br/>",
     screenshots: [
       "chk-login",
       "chk-dashboard1",

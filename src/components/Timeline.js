@@ -63,7 +63,9 @@ class Timeline extends Component {
           <TimelineElement
             date={"May 2018-Present"}
             company={"Publicis Sapient"}
-            description={"Presently Working."}
+            description={
+              "I am currently working with Sapient in an Investment Banking Project which is based on React,Redux and Redux Saga. I am involved in development, performance enhancements and production support. "
+            }
             color="white"
             logo="rect"
             imgSrc={

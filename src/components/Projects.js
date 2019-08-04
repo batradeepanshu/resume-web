@@ -15,10 +15,11 @@ class Projects extends Component {
       loading: true
     };
   }
+  get isFreelancePath() {
+    return this.props.location.pathname.indexOf("proj") === -1;
+  }
   get projects() {
-    return this.props.location.pathname.indexOf("proj") !== -1
-      ? PROJECTS
-      : FREELANCE;
+    return this.isFreelancePath ? FREELANCE : PROJECTS;
   }
   onScreenShotClicked(source) {
     window.scrollTo(0, 0);
@@ -144,7 +145,11 @@ class Projects extends Component {
               <img src={this.state.screenShotSrc} />
             </ScreenshotsModal>
           )}
-          <div className="page-head pro-head">Projects (Industry)</div>
+          <div className="page-head pro-head">
+            {this.isFreelancePath
+              ? "Feelance Projects "
+              : "Projects (Industry)"}
+          </div>
           <div className="pro-left col-md-6 clearfix">
             {this.renderProjects()}
           </div>
