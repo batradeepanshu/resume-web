@@ -6,17 +6,17 @@ export const FREELANCE = [
     summary:
       "Chkfake is an online platform that allows anyone to check for authenticity of any major currency across globe. Available as an app on iOS and Android, it can be downloaded free of charge. The fastest growing industry worldwide is counterfeiting.Jan 17, 2018<br/>",
     screenshots: [
-      "chk-login",
-      "chk-dashboard1",
-      "chk-dashboard2",
-      "chk-dashboard3",
-      "chk-inc",
-      "chk-inc2",
-      "chk-incident1",
-      "chk-alert",
-      "chk-nav",
-      "chk-pdf",
-      "chk-share"
+      "chklogin",
+      "chkdashboard1",
+      "chkdashboard2",
+      "chkdashboard3",
+      "chkinc",
+      "chkinc2",
+      "chkincident1",
+      "chkalert",
+      "chknav",
+      "chkpdf",
+      "chkshare"
     ]
   }
 ];

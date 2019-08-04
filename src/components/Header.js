@@ -89,6 +89,9 @@ class ResponsiveHeader extends Component {
             <Link to="/projects" onClick={this.openHamMenu.bind(this)}>
               PROJECTS
             </Link>
+            <Link to="/freelance" onClick={this.openHamMenu.bind(this)}>
+              FREELANCE
+            </Link>
             <Link to="/" onClick={this.openHamMenu.bind(this)}>
               CONTACT
             </Link>
